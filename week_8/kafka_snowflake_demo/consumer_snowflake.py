@@ -10,9 +10,9 @@ consumer = KafkaConsumer(
 )
 
 conn = snowflake.connector.connect(
-    user='ANDREAMORASAL',
-    password='H2mree4z9HJN2Sr',
-    account='KQRBNXP-BY60117',
+    user='Axxx',
+    password='xxx',
+    account='xxx',
     warehouse='COMPUTE_WH',
     database='KAFKA_DEMO',
     schema='REALTIME',
