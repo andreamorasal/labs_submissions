@@ -1,0 +1,207 @@
+SELECT
+    'TRANSACTION_ID' AS column_name,
+    COUNT(DISTINCT "TRANSACTION_ID") AS distinct_values,
+    COUNT(*) - COUNT("TRANSACTION_ID") AS null_count
+FROM BANK_FRAUD
+
+UNION ALL
+
+SELECT
+    'CUSTOMER_ID' AS column_name,
+    COUNT(DISTINCT "CUSTOMER_ID") AS distinct_values,
+    COUNT(*) - COUNT("CUSTOMER_ID") AS null_count
+FROM BANK_FRAUD
+
+UNION ALL
+
+SELECT
+    'TRANSACTION_DATE' AS column_name,
+    COUNT(DISTINCT "TRANSACTION_DATE") AS distinct_values,
+    COUNT(*) - COUNT("TRANSACTION_DATE") AS null_count
+FROM BANK_FRAUD
+
+UNION ALL
+
+SELECT
+    'TRANSACTION_TIME' AS column_name,
+    COUNT(DISTINCT "TRANSACTION_TIME") AS distinct_values,
+    COUNT(*) - COUNT("TRANSACTION_TIME") AS null_count
+FROM BANK_FRAUD
+
+UNION ALL
+
+SELECT
+    'HOUR_OF_DAY' AS column_name,
+    COUNT(DISTINCT "HOUR_OF_DAY") AS distinct_values,
+    COUNT(*) - COUNT("HOUR_OF_DAY") AS null_count
+FROM BANK_FRAUD
+
+UNION ALL
+
+SELECT
+    'IS_WEEKEND' AS column_name,
+    COUNT(DISTINCT "IS_WEEKEND") AS distinct_values,
+    COUNT(*) - COUNT("IS_WEEKEND") AS null_count
+FROM BANK_FRAUD
+
+UNION ALL
+
+SELECT
+    'IS_NIGHT_TRANSACTION' AS column_name,
+    COUNT(DISTINCT "IS_NIGHT_TRANSACTION") AS distinct_values,
+    COUNT(*) - COUNT("IS_NIGHT_TRANSACTION") AS null_count
+FROM BANK_FRAUD
+
+UNION ALL
+
+SELECT
+    'COUNTRY' AS column_name,
+    COUNT(DISTINCT "COUNTRY") AS distinct_values,
+    COUNT(*) - COUNT("COUNTRY") AS null_count
+FROM BANK_FRAUD
+
+UNION ALL
+
+SELECT
+    'CITY' AS column_name,
+    COUNT(DISTINCT "CITY") AS distinct_values,
+    COUNT(*) - COUNT("CITY") AS null_count
+FROM BANK_FRAUD
+
+UNION ALL
+
+SELECT
+    'MERCHANT_CATEGORY' AS column_name,
+    COUNT(DISTINCT "MERCHANT_CATEGORY") AS distinct_values,
+    COUNT(*) - COUNT("MERCHANT_CATEGORY") AS null_count
+FROM BANK_FRAUD
+
+UNION ALL
+
+SELECT
+    'PAYMENT_METHOD' AS column_name,
+    COUNT(DISTINCT "PAYMENT_METHOD") AS distinct_values,
+    COUNT(*) - COUNT("PAYMENT_METHOD") AS null_count
+FROM BANK_FRAUD
+
+UNION ALL
+
+SELECT
+    'DEVICE_TYPE' AS column_name,
+    COUNT(DISTINCT "DEVICE_TYPE") AS distinct_values,
+    COUNT(*) - COUNT("DEVICE_TYPE") AS null_count
+FROM BANK_FRAUD
+
+UNION ALL
+
+SELECT
+    'CUSTOMER_AGE' AS column_name,
+    COUNT(DISTINCT "CUSTOMER_AGE") AS distinct_values,
+    COUNT(*) - COUNT("CUSTOMER_AGE") AS null_count
+FROM BANK_FRAUD
+
+UNION ALL
+
+SELECT
+    'CREDIT_SCORE' AS column_name,
+    COUNT(DISTINCT "CREDIT_SCORE") AS distinct_values,
+    COUNT(*) - COUNT("CREDIT_SCORE") AS null_count
+FROM BANK_FRAUD
+
+UNION ALL
+
+SELECT
+    'ACCOUNT_AGE_YEARS' AS column_name,
+    COUNT(DISTINCT "ACCOUNT_AGE_YEARS") AS distinct_values,
+    COUNT(*) - COUNT("ACCOUNT_AGE_YEARS") AS null_count
+FROM BANK_FRAUD
+
+UNION ALL
+
+SELECT
+    'ACCOUNT_BALANCE' AS column_name,
+    COUNT(DISTINCT "ACCOUNT_BALANCE") AS distinct_values,
+    COUNT(*) - COUNT("ACCOUNT_BALANCE") AS null_count
+FROM BANK_FRAUD
+
+UNION ALL
+
+SELECT
+    'TRANSACTION_AMOUNT' AS column_name,
+    COUNT(DISTINCT "TRANSACTION_AMOUNT") AS distinct_values,
+    COUNT(*) - COUNT("TRANSACTION_AMOUNT") AS null_count
+FROM BANK_FRAUD
+
+UNION ALL
+
+SELECT
+    'NUM_PREV_TRANSACTIONS' AS column_name,
+    COUNT(DISTINCT "NUM_PREV_TRANSACTIONS") AS distinct_values,
+    COUNT(*) - COUNT("NUM_PREV_TRANSACTIONS") AS null_count
+FROM BANK_FRAUD
+
+UNION ALL
+
+SELECT
+    'TRANSACTION_FREQ_MONTHLY' AS column_name,
+    COUNT(DISTINCT "TRANSACTION_FREQ_MONTHLY") AS distinct_values,
+    COUNT(*) - COUNT("TRANSACTION_FREQ_MONTHLY") AS null_count
+FROM BANK_FRAUD
+
+UNION ALL
+
+SELECT
+    'DISTANCE_FROM_HOME_KM' AS column_name,
+    COUNT(DISTINCT "DISTANCE_FROM_HOME_KM") AS distinct_values,
+    COUNT(*) - COUNT("DISTANCE_FROM_HOME_KM") AS null_count
+FROM BANK_FRAUD
+
+UNION ALL
+
+SELECT
+    'TIME_SINCE_LAST_TXN_HRS' AS column_name,
+    COUNT(DISTINCT "TIME_SINCE_LAST_TXN_HRS") AS distinct_values,
+    COUNT(*) - COUNT("TIME_SINCE_LAST_TXN_HRS") AS null_count
+FROM BANK_FRAUD
+
+UNION ALL
+
+SELECT
+    'IS_INTERNATIONAL' AS column_name,
+    COUNT(DISTINCT "IS_INTERNATIONAL") AS distinct_values,
+    COUNT(*) - COUNT("IS_INTERNATIONAL") AS null_count
+FROM BANK_FRAUD
+
+UNION ALL
+
+SELECT
+    'FAILED_ATTEMPTS' AS column_name,
+    COUNT(DISTINCT "FAILED_ATTEMPTS") AS distinct_values,
+    COUNT(*) - COUNT("FAILED_ATTEMPTS") AS null_count
+FROM BANK_FRAUD
+
+UNION ALL
+
+SELECT
+    'PIN_CHANGED_RECENTLY' AS column_name,
+    COUNT(DISTINCT "PIN_CHANGED_RECENTLY") AS distinct_values,
+    COUNT(*) - COUNT("PIN_CHANGED_RECENTLY") AS null_count
+FROM BANK_FRAUD
+
+UNION ALL
+
+SELECT
+    'IS_FRAUD' AS column_name,
+    COUNT(DISTINCT "IS_FRAUD") AS distinct_values,
+    COUNT(*) - COUNT("IS_FRAUD") AS null_count
+FROM BANK_FRAUD
+
+UNION ALL
+
+SELECT
+    'FRAUD_TYPE' AS column_name,
+    COUNT(DISTINCT "FRAUD_TYPE") AS distinct_values,
+    COUNT(*) - COUNT("FRAUD_TYPE") AS null_count
+FROM BANK_FRAUD
+
+ORDER BY column_name;
