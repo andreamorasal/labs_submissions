@@ -21,9 +21,9 @@ KAFKA_TOPIC = "social_media_events"
 # Snowflake credentials
 # ---------------------------------------------------------
 
-SNOWFLAKE_ACCOUNT = "KQRBNXP-BY60117"
-SNOWFLAKE_USER = "ANDREAMORASAL"
-SNOWFLAKE_PASSWORD = "H2mree4z9HJN2Sr"
+SNOWFLAKE_ACCOUNT = "*****"
+SNOWFLAKE_USER = "*****"
+SNOWFLAKE_PASSWORD = "*****"
 SNOWFLAKE_WAREHOUSE = "LAB_WH_AMS"
 
 SNOWFLAKE_DATABASE = "SOCIAL_MEDIA_DB_AMS"
